@@ -41,15 +41,6 @@
                         @endforeach
 
                     </tbody>
-                    <tfoot>
-                        <tr>
-                            <th>No</th>
-                            <th>Nomor Ruangan</th>
-                            <th>Nama Gedung</th>
-                            <th>Status Ruangan</th>
-                            <th>Action</th>
-                        </tr>
-                    </tfoot>
                 </table>
             </div>
             <!-- /.card-body -->
