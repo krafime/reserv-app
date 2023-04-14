@@ -23,11 +23,11 @@
                         </tr>
                     </thead>
                     <tbody>
+                    @foreach ($ruangans ?? [] as $item)
                         <tr>
-                            @foreach ($ruangans as $item)
                             <td>{{ $loop->iteration }}</td>
                             <td>{{ $item->nomor_ruangan }}</td>
-                            <td>{{ $item->gedung->nama_gedung }}</td>
+                            <td>{{ optional($item->gedung)->nama_gedung }}</td>
                             <td>{{ $item->status_ruangan }}</td>
                             <td>
                                 <a href="{{ route('ruangan.edit', $item->id) }}" class="btn btn-warning">Edit</a>
@@ -39,7 +39,6 @@
                             </td>
                         </tr>
                         @endforeach
-
                     </tbody>
                 </table>
             </div>
